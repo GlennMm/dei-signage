@@ -2,7 +2,9 @@
 <header>
     <div class="container">
         <div class="header-content">
-            <a href="{{ route('home') }}" class="logo">DEI<span>Branding</span></a>
+            <a href="{{ route('home') }}" class="logo">
+                <img src="{{ asset('images/logo.png') }}" alt="DEI - Deepend Investments" class="logo-img">
+            </a>
             <nav>
                 <ul>
                     <li><a href="{{ route('home') }}" class="{{ request()->routeIs('home') ? 'active' : '' }}">Home</a></li>

@@ -51,7 +51,7 @@ class FAQSeeder extends Seeder
             // Contact FAQs
             [
                 'question' => 'How do I request a quote for signage services?',
-                'answer' => 'You can request a quote by filling out our contact form, calling us directly at +263 777 372 623, or sending an email to deependprints@gmail.com. Please provide as much detail as possible about your project including type of signage, dimensions, and any design preferences.',
+                'answer' => 'You can request a quote by filling out our contact form, calling us directly at +263 777 372 623, or sending an email to enquiry@dei.co.zw. Please provide as much detail as possible about your project including type of signage, dimensions, and any design preferences.',
                 'category' => 'contact',
                 'is_active' => true,
                 'sort_order' => 1,
