@@ -359,7 +359,6 @@
                         <div class="contact-icon">📞</div>
                         <div class="contact-text">
                             <h4>Phone</h4>
-                            <a href="tel:08644283278">08644283278</a>
                             <a href="tel:+263777372623">+263 777 372 623</a>
                         </div>
                     </div>

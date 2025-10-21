@@ -14,7 +14,7 @@ class SiteSettingSeeder extends Seeder
             // Contact Information
             [
                 'key' => 'contact_phone_primary',
-                'value' => '08644283278',
+                'value' => '+263 77 737 2623',
                 'type' => 'phone',
                 'group' => 'contact',
                 'label' => 'Primary Phone Number',
@@ -30,7 +30,7 @@ class SiteSettingSeeder extends Seeder
             ],
             [
                 'key' => 'contact_email',
-                'value' => 'deependprints@gmail.com',
+                'value' => 'enquiry@dei.co.zw',
                 'type' => 'email',
                 'group' => 'contact',
                 'label' => 'Primary Email Address',

@@ -54,16 +54,19 @@
         }
         
         .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
             display: flex;
             align-items: center;
             text-decoration: none;
-            color: white;
         }
         
-        .logo span {
-            color: var(--accent);
+        .logo-img {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover .logo-img {
+            transform: scale(1.05);
         }
         
         nav ul {
@@ -184,13 +187,22 @@
         }
         
         .footer-logo {
-            font-size: 1.8rem;
-            font-weight: bold;
             margin-bottom: 1rem;
         }
         
-        .footer-logo span {
-            color: var(--accent);
+        .footer-logo-img {
+            height: 50px;
+            width: auto;
+            filter: brightness(1.3) contrast(1.1);
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 8px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-logo:hover .footer-logo-img {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: scale(1.05);
         }
         
         .footer-about p {
@@ -212,12 +224,24 @@
             align-items: center;
             justify-content: center;
             color: white;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
             text-decoration: none;
+            border: 2px solid transparent;
         }
         
         .social-icon:hover {
-            background-color: var(--primary);
+            background-color: var(--accent);
+            color: var(--dark);
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+        
+        .social-icon svg {
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover svg {
+            transform: scale(1.1);
         }
         
         .footer-links h3, .footer-services h3, .footer-contact h3 {
@@ -265,6 +289,23 @@
         .footer-contact-icon {
             margin-right: 0.8rem;
             color: var(--accent);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: rgba(255, 183, 0, 0.1);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-contact-icon svg {
+            transition: transform 0.3s ease;
+        }
+        
+        .footer-contact p:hover .footer-contact-icon {
+            background-color: rgba(255, 183, 0, 0.2);
+            transform: scale(1.1);
         }
         
         .footer-bottom {

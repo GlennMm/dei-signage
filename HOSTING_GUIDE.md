@@ -563,7 +563,7 @@ SESSION_DRIVER=file
 - [Filament Documentation](https://filamentphp.com/docs)
 
 ### DEI Signage Support
-- **Email:** deependprints@gmail.com
+- **Email:** enquiry@dei.co.zw
 - **Phone:** +263 777 372 623
 
 ---

@@ -18,7 +18,7 @@ class ContactController extends Controller
             'faqs' => FAQ::active()->where('category', 'contact')->orderBy('sort_order')->get(),
             'contact_info' => [
                 'phone' => SiteSetting::get('contact_phone', '+263 777 372 623'),
-                'email' => SiteSetting::get('contact_email', 'deependprints@gmail.com'),
+                'email' => SiteSetting::get('contact_email', 'enquiry@dei.co.zw'),
                 'address' => SiteSetting::get('contact_address', '4 Aberdeen Road, Avondale, Harare'),
                 'website' => SiteSetting::get('website_url', 'www.deibrandingandsignage.com'),
             ],
@@ -43,7 +43,7 @@ class ContactController extends Controller
 
         try {
             // Send email notification
-            Mail::to(SiteSetting::get('contact_email', 'deependprints@gmail.com'))
+            Mail::to(SiteSetting::get('contact_email', 'enquiry@dei.co.zw'))
                 ->send(new ContactFormMail($submission));
 
             return back()->with('success', 'Thank you for your message! We will get back to you soon.');
